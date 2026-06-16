@@ -389,7 +389,7 @@ function Arena() {
     setCurrentRound(0);
     setShowJudge(false);
     try {
-      const res = await axios.post("http://127.0.0.1:8000/debate", { topic, num_rounds: 3 });
+      const res = await axios.post("https://ai-debate-arena-9z8y.onrender.com/debate", { topic, num_rounds: 3 });
       setResult(res.data);
       for (let i = 1; i <= res.data.rounds.length; i++) {
         await new Promise((r) => setTimeout(r, 1200));
