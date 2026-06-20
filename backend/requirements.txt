@@ -8,3 +8,10 @@ numpy
 python-multipart
 pdfplumber
 chromadb
+sentence-transformers
+torch
+transformers
+huggingface-hub
+tokenizers
+scikit-learn
+pandas
