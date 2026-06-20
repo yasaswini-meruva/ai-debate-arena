@@ -6,3 +6,4 @@ pypdf
 faiss-cpu
 numpy
 python-multipart
+pdfplumber
