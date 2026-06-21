@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform, AnimatePresence } from "framer-motion";
 import axios from "axios";
 
-const API = "https://ai-debate-arena-9z8y.onrender.com";
+const API = "https://ai-debate-arena-production-e7da.up.railway.app";
 
 // 🌟 Custom Cursor
 function CustomCursor() {
