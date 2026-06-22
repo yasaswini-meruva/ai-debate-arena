@@ -281,6 +281,13 @@ function PDFUpload({ onUpload, uploaded }) {
   const handleUpload = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
+
+    if (file.size > 5 * 1024 * 1024) {
+      alert("Please upload a PDF smaller than 5MB");
+      return;
+    }
+
+setUploading(true);
     setUploading(true);
     const formData = new FormData();
     formData.append("file", file);
