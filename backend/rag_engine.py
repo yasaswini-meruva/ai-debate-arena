@@ -68,10 +68,8 @@ def retrieve_evidence(query, n_results=3):
     return "\n\n".join(evidence)
 
 def process_pdf(pdf_path):
-    """Full pipeline: extract + store"""
     chunks = extract_text_from_pdf(pdf_path)
-    count = store_in_chromadb(chunks)
-    return count
+    return len(chunks)
 
 # Test
 if __name__ == "__main__":
