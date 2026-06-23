@@ -69,6 +69,7 @@ def retrieve_evidence(query, n_results=3):
 
 def process_pdf(pdf_path):
     chunks = extract_text_from_pdf(pdf_path)
+    store_in_chromadb(chunks)
     return len(chunks)
 
 # Test

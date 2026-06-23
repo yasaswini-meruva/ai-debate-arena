@@ -97,7 +97,7 @@ def run_debate(topic, num_rounds=3, use_rag=False):
         rounds.append({"for": for_arg, "against": against_arg})
 
         # Fact check if RAG enabled
-        if use_rag:
+        if False:
             for_check = fact_check(for_arg, topic)
             against_check = fact_check(against_arg, topic)
             fact_checks.append({
